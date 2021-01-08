@@ -28,12 +28,12 @@ setSelectedColor = (newColor) => {
 
   render() {
     return (
-      <div id="app">
-        <ColorSelector />
-        <div id="matrix">
-          {this.genMatrix()}
-        </div>
+     <div id="app">
+      <ColorSelector setSelectedColor={this.setSelectedColor} />
+      <div id="matrix">
+        {this.genMatrix()}
       </div>
+    </div>
     )
   }
 }
